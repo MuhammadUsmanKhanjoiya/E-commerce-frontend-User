@@ -14,7 +14,7 @@ function Login() {
     e.preventDefault();
     try {
       if (currentState === "Sign Up") {
-        const response = await axios.post("http://localhost:8000" + "/api/user/registor", {
+        const response = await axios.post("https://unethnological-nonapportionable-mia.ngrok-free.dev" + "/api/user/registor", {
           name,
           email,
           password,
@@ -24,7 +24,7 @@ function Login() {
         localStorage.setItem("token", response.data.token);
         toast.success(response.data.message);
       } else {
-        const response = await axios.post(backendUrl + "/api/user/login", {
+        const response = await axios.post("https://unethnological-nonapportionable-mia.ngrok-free.dev" + "/api/user/login", {
           email,
           password,
         });
