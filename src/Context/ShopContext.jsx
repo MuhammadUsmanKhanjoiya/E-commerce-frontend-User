@@ -10,7 +10,7 @@ export const ShopContext = createContext();
 const ShopContextProvider = (props) => {
   const currency = "PKR";
   const delivery_fee = 10;
-  const backendUrl ="http://localhost:8000";
+  const backendUrl ="https://backend-e-commerce-ncjb.onrender.com";
   const [search, setSearch] = useState("");
   const [showSearch, setShowSearch] = useState(false);
   const [cartItems, setCartItems] = useState({});
