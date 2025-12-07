@@ -14,7 +14,7 @@ function Login() {
     e.preventDefault();
     try {
       if (currentState === "Sign Up") {
-        const response = await axios.post(backendUrl + "/api/user/registor", {
+        const response = await axios.post("http://localhost:8000" + "/api/user/registor", {
           name,
           email,
           password,
