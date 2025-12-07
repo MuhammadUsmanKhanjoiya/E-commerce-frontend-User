@@ -66,7 +66,7 @@ function Place_Order() {
       switch (method) {
         case "cod":
           const response = await axios.post(
-            "http://localhost:8000/api/order/place",
+            "https://unethnological-nonapportionable-mia.ngrok-free.dev/api/order/place",
             orderData,
             { headers: { token } }
           );
