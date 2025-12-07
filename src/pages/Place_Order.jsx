@@ -100,7 +100,7 @@ function Place_Order() {
               alert("Failed to start PayFast payment");
             }
           } catch (error) {
-            console.error("🚨 PayFast Axios error:", err);
+            console.error("🚨 PayFast Axios error:", error);
             alert("Error connecting to PayFast endpoint");
           }
           break;
