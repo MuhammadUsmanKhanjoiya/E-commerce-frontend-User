@@ -14,7 +14,7 @@ function Login() {
     e.preventDefault();
     try {
       if (currentState === "Sign Up") {
-        const response = await axios.post("https://backend-e-commerce-ncjb.onrender.com" + "/api/user/registor", {
+        const response = await axios.post("https://backend-e-commerce-ncjb.onrender.com/api/user/registor", {
           name,
           email,
           password,
