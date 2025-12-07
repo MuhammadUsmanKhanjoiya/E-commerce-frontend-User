@@ -24,7 +24,7 @@ function Login() {
         localStorage.setItem("token", response.data.token);
         toast.success(response.data.message);
       } else {
-        const response = await axios.post("https://backend-e-commerce-ncjb.onrender.com" + "/api/user/login", {
+        const response = await axios.post("https://backend-e-commerce-ncjb.onrender.com/api/user/login", {
           email,
           password,
         });
