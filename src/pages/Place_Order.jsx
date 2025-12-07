@@ -79,7 +79,7 @@ function Place_Order() {
         case "payfast":
           try {
             const payfastResponse = await axios.post(
-              "https://unethnological-nonapportionable-mia.ngrok-free.dev/api/order/place/payfast",
+              "https://backend-e-commerce-ncjb.onrender.com/api/order/place/payfast",
               { ...orderData, email: fromData.email || "test@example.com" },
               { headers: { token } }
             );
